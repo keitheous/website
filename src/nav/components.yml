@@ -22,3 +22,7 @@
           title: Multiselect
     - title: Tabs
       id: /components/tabs
+    - title: Text inputs
+      items:
+        - id: /components/text-inputs
+          title: Text inputs
