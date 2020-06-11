@@ -20,9 +20,9 @@
           title: Select
         - id: /components/multiselect
           title: Multiselect
+    - title: Forms
+      items:
+        - id: /components/input
+          title: Input
     - title: Tabs
       id: /components/tabs
-    - title: Text inputs
-      items:
-        - id: /components/text-inputs
-          title: Text inputs
