@@ -1,0 +1,107 @@
+---
+title: Table
+description: >
+  Tables organize and display related content from a data set. This helps users
+  manage, compare, and analyze large amounts of information.
+package: '@zendeskgarden/react-tables'
+components:
+  - tables/src/elements/Body.tsx
+  - tables/src/elements/Caption.tsx
+  - tables/src/elements/Cell.tsx
+  - tables/src/elements/GroupRow.tsx
+  - tables/src/elements/Head.tsx
+  - tables/src/elements/HeaderCell.tsx
+  - tables/src/elements/HeaderRow.tsx
+  - tables/src/elements/OverflowButton.tsx
+  - tables/src/elements/Row.tsx
+  - tables/src/elements/SortableCell.tsx
+  - tables/src/elements/Table.tsx
+---
+
+<Usage>
+  <Use>
+    <ul>
+      <li>To organize and display data that has shared relationships</li>
+    </ul>
+  </Use>
+  <Misuse>
+    <ul>
+      <li>
+        <Markdown>
+          To layout content on a page, use the [Grid](/components/grid) component instead
+        </Markdown>
+      </li>
+    </ul>
+  </Misuse>
+</Usage>
+
+## How to use it
+
+### Default
+
+The typical usage of a Table component.
+
+import Default from '../../examples/table/TableDefault.tsx';
+import DefaultCode from '!!raw-loader!../../examples/table/TableDefault.tsx';
+
+<CodeExample code={DefaultCode}>
+  <Default />
+</CodeExample>
+
+## Configuration
+
+<Configuration reactPackage={props.data.mdx.package} components={props.data.mdx.components} />
+
+## API
+
+### Body
+
+<PropSheet components={props.data.mdx.components} componentName="body" />
+
+### Caption
+
+<PropSheet components={props.data.mdx.components} componentName="caption" />
+
+### Cell
+
+<PropSheet components={props.data.mdx.components} componentName="cell" />
+
+### GroupRow
+
+<PropSheet components={props.data.mdx.components} componentName="grouprow" />
+
+### Head
+
+<PropSheet components={props.data.mdx.components} componentName="head" />
+
+### HeaderCell
+
+<PropSheet components={props.data.mdx.components} componentName="headercell" />
+
+### HeaderRow
+
+<PropSheet components={props.data.mdx.components} componentName="headerrow" />
+
+### OverflowButton
+
+<PropSheet components={props.data.mdx.components} componentName="overflowbutton" />
+
+### Row
+
+<PropSheet components={props.data.mdx.components} componentName="row" />
+
+### SortableCell
+
+<PropSheet components={props.data.mdx.components} componentName="sortablecell" />
+
+### Table
+
+<PropSheet components={props.data.mdx.components} componentName="table" />
+
+import { graphql } from 'gatsby';
+
+export const pageQuery = graphql`
+  query($fileAbsolutePath: String) {
+    ...SidebarPageFragment
+  }
+`;
